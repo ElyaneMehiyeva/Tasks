@@ -14,23 +14,23 @@ namespace ConsoleApp2
 
            
             string text = "Karabakh is Azerbaijan ! ! !";
-            Console.WriteLine(ReplaceSpace(ref text));
+            ReplaceSpace(ref text)
+            Console.WriteLine(text);
             
 
         }
 
 
-        static string ReplaceSpace(ref string text)
+        static void ReplaceSpace(ref string text)
         {
             text = text.Replace(" ", "");
-            return text;
         }
         
       
 
 
         // Task3 Method Start
-        static int NewNumber(ref int num)
+        static void NewNumber(ref int num)
         {
             int index = 0;
             while (index * index <= num)
@@ -40,7 +40,6 @@ namespace ConsoleApp2
             }
 
             num = index - 1;
-            return num;
         }
 
 
