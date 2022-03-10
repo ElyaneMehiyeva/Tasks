@@ -23,7 +23,16 @@ namespace ConsoleApp2
 
         static void ReplaceSpace(ref string text)
         {
-            text = text.Replace(" ", "");
+            string newText = "";
+            for (int i = 0; i < text.Length; i++)
+            {
+                if (text[i] != ' ')
+                {
+                    newText += text[i];
+                }
+                
+            }
+            text = newText;
         }
         
       
